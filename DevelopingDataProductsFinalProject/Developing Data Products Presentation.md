@@ -51,7 +51,8 @@ str(mtcars)
 
 External Links
 ========================================================
-The link to the Shiny App : https://sairampraneeth.shinyapps.io/DevelopingDataProductsFinalProject/
+The link to the Shiny App :
+https://sairampraneeth.shinyapps.io/Predicting_Car_Mileage/
 
 The Github Repository of the Project : https://github.com/sairampraneeth/Developing-Data-Products-Final-Project
 
