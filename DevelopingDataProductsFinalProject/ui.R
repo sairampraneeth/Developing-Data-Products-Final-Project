@@ -37,9 +37,12 @@ shinyUI(
       column(width = 5, offset = 6,
              textOutput("ActionDone")
       ),
+      column(width = 6,
+        helpText(a("Click Here For Documentation", href = "https://sairampraneeth.shinyapps.io/Documentation/"))
+      ),
       mainPanel(
-        h1("Mileage Prediction"),
-        textOutput("predictedvalue")
+             h1("Mileage Prediction"),
+             textOutput("predictedvalue")
       )
     )
   )

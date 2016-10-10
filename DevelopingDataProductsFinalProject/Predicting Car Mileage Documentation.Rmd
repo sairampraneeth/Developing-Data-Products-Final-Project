@@ -1,0 +1,38 @@
+---
+title: "Predicting Car Mileage Documentation"
+author: "Vegesana Sairam Praneeth"
+date: "October 9, 2016"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# HOW TO USE THE SHINY APP
+Users can input the following characteristics of a Car:
+
+1. Number of Cylinders(4-8)
+
+2. Displacement(50-600 cu.in.) 
+
+3. Horse Power(50-350)
+
+4. Rear Axle Ratio(2-5)
+
+5. Weight(1-6 Mega lbs)
+
+6. Quarter Mile time(10-30 secs)
+
+7. Engine Type(V/S)
+
+8. Transmission Type(0-1/Automatic-Manual)
+
+9. Number of Gears(3-5) 
+
+10. Number of Carburetors(1-8).
+
+Upon Clicking on the "Predict Mileage" Button, the App outputs the predicted Mileage of the Car with the given characteristics along with the Variability covered by the Prediction Model. An error Statement is printed if one of the Characteristics given is a blank value.
+
+Upon Clicking on the "Add New Record" Button, the car is added as a new record to the dataset and a new prediction model is built using the updated dataset. When a new car's mileage is being predicted, the changes are reflected in the Variability of the Prediction Model.

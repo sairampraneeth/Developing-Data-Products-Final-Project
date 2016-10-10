@@ -20,8 +20,9 @@ shinyServer(
                          carb = input$id10
       )
       predmod <<- PredictionModel
-      print(paste("The Predicted Mileage is",predict(predmod,test)))
+      print(paste("The Predicted Mileage is",predict(predmod,test),".The current prediction model has a variability coverage of ",round(summary(predmod)$r.squared * 100,2),"Percent"))
     })
+    
     observeEvent(input$button2,{
       test <- data.frame(cyl = input$id1,
                          disp = input$id2,
